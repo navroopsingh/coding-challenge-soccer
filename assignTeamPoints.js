@@ -10,10 +10,15 @@ module.exports = (game, matchTeamPoints, matches, matchDaySet) => {
       .slice(0, parts.length - 1)
       .join(" ")
       .trim()
+
+    /**
+     * check for start of a new match day if matchDaySet already has that team
+     */
     if (matchDaySet.has(team)) {
       printResult(matches, matchTeamPoints)
       matchDaySet.clear()
     }
+
     matchDaySet.add(team)
     initMatchTeamPoints(matchTeamPoints, team)
     const score = parts[parts.length - 1]

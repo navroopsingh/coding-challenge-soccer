@@ -37,4 +37,37 @@ describe("assignTeamPoints", function () {
       "Santa Cruz Slugs",
     ])
   })
+
+  it("builds matches correctly", function () {
+    const matchTeamPoints = {}
+    const matches = []
+    const matchDaySet = new Set()
+    const games = [
+      "San Jose Earthquakes 3, Santa Cruz Slugs 3",
+      "Capitola Seahorses 1, Aptos FC 0",
+      "Felton Lumberjacks 2, Monterey United 0",
+      "Felton Lumberjacks 1, Aptos FC 2",
+    ]
+
+    games.forEach((game) =>
+      assignTeamPoints(game, matchTeamPoints, matches, matchDaySet)
+    )
+
+    assert.deepEqual(matches, [
+      [
+        {
+          points: 3,
+          team: "Capitola Seahorses",
+        },
+        {
+          points: 3,
+          team: "Felton Lumberjacks",
+        },
+        {
+          points: 1,
+          team: "San Jose Earthquakes",
+        },
+      ],
+    ])
+  })
 })

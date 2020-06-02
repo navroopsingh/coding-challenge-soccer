@@ -8,7 +8,7 @@ try {
 
   const games = data.split(/\r?\n/)
 
-  // This will store results for each Matchday
+  // This will store top 3 results for each Matchday
   const matches = []
 
   // A map of team name - points

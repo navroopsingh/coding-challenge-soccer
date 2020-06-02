@@ -1,0 +1,11 @@
+{
+  "name": "jane-tech",
+  "version": "1.0.0",
+  "description": "hire test",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "navroop singh",
+  "license": "ISC"
+}

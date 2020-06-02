@@ -1,3 +1,21 @@
+## Set up Application
+
+make sure node , npm are installed.
+
+## Run Application
+
+It will use sample-input.txt by default and prints output on console.
+
+node index.js
+
+## Test Application
+
+make sure mocha is installed 
+npm install --save mocha
+
+from root directory run - 
+./node_modules/mocha/bin/mocha tests/
+
 ## The Problem
 
 We want you to create a command-line application that reads a listing of game

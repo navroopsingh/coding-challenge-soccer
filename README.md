@@ -13,7 +13,8 @@ npm run main
 make sure mocha is installed
 npm install --save mocha
 
-than run
+To run test suite - 
+
 npm run test
 
 ## The Problem

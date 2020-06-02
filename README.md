@@ -6,15 +6,15 @@ make sure node , npm are installed.
 
 It will use sample-input.txt by default and prints output on console.
 
-node index.js
+npm run main
 
 ## Test Application
 
-make sure mocha is installed 
+make sure mocha is installed
 npm install --save mocha
 
-from root directory run - 
-./node_modules/mocha/bin/mocha tests/
+than run
+npm run test
 
 ## The Problem
 

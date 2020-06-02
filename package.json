@@ -4,7 +4,8 @@
   "description": "hire test",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "main": "node index.js",
+    "test": "./node_modules/mocha/bin/mocha tests/"
   },
   "author": "navroop singh",
   "license": "ISC"
